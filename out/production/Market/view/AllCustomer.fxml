@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllCustomerController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="558.0" stroke="BLACK" strokeType="INSIDE" width="935.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#bc7428" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TableView fx:id="tblCustomer" layoutX="14.0" layoutY="118.0" prefHeight="391.0" prefWidth="905.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="106.0" text="Customer Id" />
+          <TableColumn fx:id="colName" prefWidth="127.0" text="Customer Name" />
+            <TableColumn fx:id="colAddress" prefWidth="137.0" text="Customer Address" />
+            <TableColumn fx:id="colCity" prefWidth="126.0" text="Customer City" />
+            <TableColumn fx:id="colProvince" prefWidth="140.0" text="Customer Province" />
+            <TableColumn fx:id="colPostalCode" prefWidth="139.0" text="PostalCode" />
+            <TableColumn fx:id="colSalary" prefWidth="128.0" text="Customer Salary" />
+        </columns>
+      </TableView>
+      <Label layoutX="274.0" layoutY="3.0" text="All CUSTOMERS">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <Button layoutX="811.0" layoutY="518.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: #e74c3c;" text="Delete">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

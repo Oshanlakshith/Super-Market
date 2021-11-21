@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerSearchController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="560.0" stroke="BLACK" strokeType="INSIDE" width="490.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1562ab" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextArea layoutX="27.0" layoutY="32.0" prefHeight="494.0" prefWidth="432.0" />
+      <Label layoutX="96.0" layoutY="45.0" text="CUSTOMER SEARCH">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCSId" layoutX="52.0" layoutY="104.0" onAction="#CustomerSearch" prefHeight="31.0" prefWidth="388.0" promptText="Customer Id" />
+      <TextField fx:id="txtCSName" layoutX="52.0" layoutY="158.0" prefHeight="31.0" prefWidth="388.0" promptText="Customer Name" />
+      <TextField fx:id="txtCSProvince" layoutX="54.0" layoutY="339.0" prefHeight="31.0" prefWidth="388.0" promptText="Customer Province" />
+      <TextField fx:id="txtCSAddress" layoutX="52.0" layoutY="220.0" prefHeight="31.0" prefWidth="388.0" promptText="Customer Address" />
+      <TextField fx:id="txtCSCity" layoutX="52.0" layoutY="282.0" prefHeight="31.0" prefWidth="388.0" promptText="Customer City" />
+      <TextField fx:id="txtCSPostalCode" layoutX="54.0" layoutY="393.0" prefHeight="31.0" prefWidth="388.0" promptText="PostalCode" />
+      <TextField fx:id="txtCSSalary" layoutX="54.0" layoutY="450.0" prefHeight="31.0" prefWidth="388.0" promptText="Salary" />
+   </children>
+</AnchorPane>
